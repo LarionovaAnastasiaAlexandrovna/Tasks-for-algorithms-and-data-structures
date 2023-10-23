@@ -1,0 +1,3 @@
+/Users/macbookair/Desktop/3 sem/АиСД/0.1. The order of multiplication of matrices/cmake-build-debug/CMakeFiles/0_1__The_order_of_multiplication_of_matrices.dir
+/Users/macbookair/Desktop/3 sem/АиСД/0.1. The order of multiplication of matrices/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/macbookair/Desktop/3 sem/АиСД/0.1. The order of multiplication of matrices/cmake-build-debug/CMakeFiles/rebuild_cache.dir

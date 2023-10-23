@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.23)
+project(0_1__The_order_of_multiplication_of_matrices)
+
+set(CMAKE_CXX_STANDARD 23)
+
+add_executable(0_1__The_order_of_multiplication_of_matrices main.cpp)
