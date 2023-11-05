@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.23)
+project(Task_0_2__Canonical_form__according_to_the_list_of_arcs_)
+
+set(CMAKE_CXX_STANDARD 23)
+
+add_executable(Task_0_2__Canonical_form__according_to_the_list_of_arcs_ main.cpp)

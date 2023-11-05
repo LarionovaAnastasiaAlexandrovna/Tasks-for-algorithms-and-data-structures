@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.23)
+project(Problem_0_4__Canonical_form__by_adjacency_matrix_)
+
+set(CMAKE_CXX_STANDARD 23)
+
+add_executable(Problem_0_4__Canonical_form__by_adjacency_matrix_ main.cpp)
