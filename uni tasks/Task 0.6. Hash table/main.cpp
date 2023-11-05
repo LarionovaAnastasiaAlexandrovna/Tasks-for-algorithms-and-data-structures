@@ -1,25 +1,36 @@
 #include <iostream>
 #include <vector>
 #include <fstream>
+#include <unordered_set>
 
 class Solution {
 public:
     void static HashTableOperations(int m, int c, int n, std::ifstream& fin, std::ofstream& fout)
     {
         std::vector<int> table(m, -1);
+        std::vector<int> keys(n);
+        for (int i = 0; i < n; ++i)
+        {
+            fin >> keys[i];
+        }
+        std::unordered_set<int> seen;
+        keys.erase(std::remove_if
+                        (keys.begin(), keys.end(),
+                         [&seen](const int& value)-> bool
+                         {return !seen.insert(value).second;}),
+                         keys.end());
+        n = keys.size();
 
         for (int i = 0; i < n; ++i)
         {
-            int key;
-            fin >> key;
             bool is_add = false;
             int j = 0;
             while (!is_add)
             {
-                int pos = (key % m + c * j) % m;
+                int pos = (keys[i] % m + c * j) % m;
                 if (table[pos] == -1)
                 {
-                    table[pos] = key;
+                    table[pos] = keys[i];
                     is_add = true;
                 }
                 j++;
