@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.23)
+project(Task_0_5__Destruction_of_roads__simple_version_)
+
+set(CMAKE_CXX_STANDARD 23)
+
+add_executable(Task_0_5__Destruction_of_roads__simple_version_ main.cpp)
